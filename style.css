@@ -1,0 +1,505 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", serif;
+
+}
+
+:root{
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+
+    
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Light-grayish-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 69%;
+    height: 85%;
+    display: grid;
+    grid-template-rows: 48% 48%;
+    grid-template-columns: repeat(4,23.6%);
+    gap: 20px 20px;
+}
+
+.Daniel{
+    background-color: var(--Moderate-violet);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    padding: 30px;
+    position: relative;
+}
+
+.jonathan{
+    background-color: var(--Very-dark-grayish-blue);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    padding: 25px;
+    position: relative;
+}
+
+.kira{
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 25px;
+    position: relative;
+}
+
+
+.Jeanette{
+    background-color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    padding: 25px;
+    position: relative;
+}
+
+
+.patrick{
+    background-color: var(--Very-dark-blackish-blue);
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    padding: 25px;
+    position: relative;
+}
+
+/***************************************/
+
+span,h4,p{
+    margin-left: 50px;
+    color: var(--Light-gray);
+}
+h4{
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: -4px;
+}
+span{
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 11.6px;
+}
+
+
+p{
+    opacity: 70%;
+    font-weight: 500;
+    margin-top: 17px;
+    margin-left: -3px;
+    font-size: 11.6px;
+    line-height: 20px;
+}
+h2{
+    color:var(--White);
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+/****************************************************/
+.Jeanette h4{
+    color: var(--Very-dark-blackish-blue);
+}
+.kira h4{
+    color: var(--Very-dark-blackish-blue);
+}
+
+.Jeanette h2{
+    color: var(--Very-dark-blackish-blue);
+}
+.kira h2{
+    color: var(--Very-dark-blackish-blue);
+}
+
+
+.Jeanette span{
+    color: var(--Very-dark-grayish-blue);
+}
+.kira span{
+    color: var(--Very-dark-grayish-blue);
+}
+
+
+.Jeanette p{
+    color: var(--Very-dark-grayish-blue);
+}
+.kira p{
+    color: var(--Very-dark-grayish-blue);
+}
+/****************************************************/
+
+.Daniel::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid hsl(263deg 55.06% 63.54%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 30px;
+    top: 29px;
+}
+
+.Daniel img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 33px;
+    top: 31.2px;
+}
+/************************************************/
+
+.jonathan::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 26px;
+    top: 23px;
+}
+.jonathan img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 28.3px;
+    top: 25.2px;
+}
+/************************************************/
+.kira::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 25px;
+    top: 23px;
+}
+.kira img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 27.3px;
+    top: 25.2px;
+}
+/************************************************/
+.Jeanette::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 25px;
+    top: 23px;
+}
+.Jeanette img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 27.3px;
+    top: 25.2px;
+}
+/************************************************/
+.patrick::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid  hsl(263deg 55.06% 63.54%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 25px;
+    top: 23px;
+}
+.patrick img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 27.5px;
+    top: 25.2px;
+}
+/***************************/
+.Jeanette h2{
+    width: 200px;
+}
+
+/***********************/
+.Daniel p {
+    width: 477px;
+}
+
+.Jonathan p {
+    width: 202px;
+}
+.kira p{
+    width: 195px;
+}
+.Jeanette p {
+    width: 190px;
+    margin-top: 24px;
+}
+.patrick p {
+    margin-top: 36px;
+    width: 481px;
+}
+
+/**********************************************************/
+@media (max-width: 375px) {
+    .container{
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-rows: 460px 245px 228px 407px 450px;
+        grid-template-columns: 100%;
+        gap: 20px 20px;
+    }
+    
+    .Daniel{
+        background-color: var(--Moderate-violet);
+        grid-column: 1/1;
+        grid-row: 1/2;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 30px;
+        position: relative;
+}
+    
+    .jonathan{
+        background-color: var(--Very-dark-grayish-blue);
+        grid-column: 1/1;
+        grid-row: 2/3;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 25px;
+        position: relative;
+}
+    
+    .kira{
+        background-color: white;
+        grid-column: 1/1;
+        grid-row: 5/6;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 25px;
+        position: relative;
+}
+    
+    
+    .Jeanette{
+        background-color: white;
+        grid-column: 1/1;
+        grid-row: 3/4;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 25px;
+        position: relative;
+}
+    
+    
+    .patrick{
+        background-color: var(--Very-dark-blackish-blue);
+        grid-column: 1/1;
+        grid-row: 4/5;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    
+        padding: 25px;
+        position: relative;
+    }
+    /***********************************/
+    .Daniel img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        left: 33px;
+        top: 31.8px;
+    }
+    /************************************************/
+    .jonathan img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        left: 28.3px;
+        top: 25.7px;
+    }
+
+    /**********************************************/
+    .patrick img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        left: 27.5px;
+        top: 25.7px;
+    }
+    /******************************************************************/
+    .Daniel h2{
+        width: 265px;
+    }
+    .Jeanette h2{
+        width: 265px;
+    }
+    .kira h2{
+        width: 300px;
+    }
+/**********************************************************/
+    .Daniel p{
+        width: 253px;
+    }
+    
+    .jonathan p{
+        width: 271px;
+    }
+    .Jeanette p{
+        width: 271px;
+    }
+    
+    .patrick p{
+        width: 266px;
+    }
+    
+    .kira p{
+        width: 266px;
+    }
+    
+}
+
+/****************************************************************/
+
+@media (max-width: 1440px) and (min-width: 376px) {
+    .container{
+        width: 78%;
+        height: 71%;
+        display: grid;
+        grid-template-rows: 48% 48%;
+        grid-template-columns: repeat(4,23.6%);
+        gap: 20px 20px;
+    }
+
+    .Daniel h2{
+        width: 488px;
+    }
+    .jonathan p{
+        width: 200px;
+    }
+    
+}
