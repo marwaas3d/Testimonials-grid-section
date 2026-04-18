@@ -18,16 +18,32 @@ body {
 }
 .testimonial-card {
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: unset;
 
   &:nth-child(1) {
     background-color: var(--Purple-500);
     color: var(--White);
+    position: relative;
     .user-status {
       color: var(--Grey-100);
     }
     .avatar {
       border-color: var(--Grey-300);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+
+      width: 150px;
+      height: 150px;
+
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 24 24' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M7 17H3V13C3 9.686 5.686 7 9 7V11C7.343 11 6 12.343 6 14V15H7V17ZM17 17H13V13C13 9.686 15.686 7 19 7V11C17.343 11 16 12.343 16 14V15H17V17Z'/%3E%3C/svg%3E");
+
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
   &:nth-child(2) {
@@ -92,7 +108,7 @@ body {
     }
   }
 
-  & card-body {
+  & .card-body {
     line-height: 1.5;
     & .feedback-title {
       font-weight: 600;

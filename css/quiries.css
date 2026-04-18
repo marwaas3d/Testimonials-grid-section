@@ -17,6 +17,8 @@
   }
 
   .testimonial-card {
+    box-shadow: 5px 7px 9px #0c0d1959;
+
     &:not(:last-child) {
       margin-bottom: 0;
     }
