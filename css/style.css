@@ -1,0 +1,103 @@
+/* .attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.container {
+  padding-inline: 2rem;
+}
+.testmonials-section {
+  margin: auto;
+}
+.testimonial-card {
+  padding: 2rem;
+  border-radius: 1rem;
+
+  &:nth-child(1) {
+    background-color: var(--Purple-500);
+    color: var(--White);
+    .user-status {
+      color: var(--Grey-100);
+    }
+    .avatar {
+      border-color: var(--Grey-300);
+    }
+  }
+  &:nth-child(2) {
+    background-color: var(--Grey-500);
+    color: var(--White);
+    .user-status {
+      color: var(--Grey-100);
+    }
+    .avatar {
+      border-color: var(--Grey-200);
+    }
+  }
+  &:nth-child(3),
+  &:nth-child(5) {
+    background-color: var(--White);
+    color: var(--Grey-500);
+    .user-status {
+      color: var(--Grey-400);
+    }
+
+    .avatar {
+      border-color: var(--Grey-100);
+    }
+  }
+  &:nth-child(4) {
+    background-color: var(--Dark-blue);
+    color: var(--Grey-200);
+    .user-status {
+      color: var(--Grey-200);
+    }
+
+    .avatar {
+      border-color: var(--Purple-500);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  & .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+
+    & .avatar {
+      width: 3.4375rem;
+      height: 3.4375rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid;
+    }
+
+    & .user-info {
+      text-transform: capitalize;
+
+      & .username {
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  & card-body {
+    line-height: 1.5;
+    & .feedback-title {
+      font-weight: 600;
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
